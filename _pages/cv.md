@@ -17,9 +17,7 @@ Education
 Work experience
 ======
 * Summer 2014: sports animator
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  
   
 Skills
 ======
