@@ -1,7 +1,33 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "Data Mining Project"
+excerpt: "project focused on classifiers, time series analysis and sequential pattern mining <br/><img src='/images/dm2.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This text is based on the study of the dataset "Occupancy Detection", available in UCI (machine learning repository) site, composed by three dataset ("datatest.txt", "datatest2.txt" and "datatraining.txt"), using the sci-kit learn library,
+pandas, Numpy and Keras. The project objective is that of apply the main
+tool we know, in order to extract information from the dataset, to classify new
+records, make predictions based on time and detect the pattern rules to un-
+derstand the occupational situation of a room. To do so, we have to adapt the
+dataset to the task, sometimes modifying it or creating a new one from the orig-
+inal. The study could have multiple application, like to avoid waste of energy or
+to get better some environmental condition. The work starts with the analysis
+of the data, passing through the main classication techniques we know. Also, a
+time series analysis was made. The code we implemented to perform the study is
+available in our GitHub channel (https://github.com/DM2-project/Occupancy-
+detection).
+We implemented and evaluated some basic classiers. The performance of all them is good. Below are reported, the weighted average of precision, the recall and F1-score.
+<img src='/images/basic.png'>
+Then we implemented and evaluated advanced classifier, they go obviously deeper and are more precise the the basic
+ones. Nevertheless, in this case it seem useless to applique these classiers, since
+the basic ones were already almost perfect and considering that in some cases,
+like the application on NN, the classiers are more time consuming, it doesn't
+worth to use them. However, they conrmed the work done and we can arm
+we have high precision in classify our data: <img src='/images/advanced.png'>.
+We made an analysis of the dataset based on time: we created time series
+by transforming the attribute "Date" into our index.  To
+make this analysis, we used three different datasets: the original one and two
+datasets obtained by selecting random rows from the original one. The latters
+have same dimensions (10280 rows).
+
+
