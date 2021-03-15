@@ -9,5 +9,5 @@ I apply this technique to a training set obtained from microarray experiments on
 Compared to partional and hierarchical clustering, spectral clustering presents several advantages. First of all the simplicity of implementation, for which a linear algebra library is sufficient, moreover the results overcome numerous difficulties that present themselves with other techniques.
 Graph theory is the theory that underlies spectral clustering: the training set comes considered as a weighted graph whose vertices represent training objects set while the arcs correspond to the weights of similarity between the vertices that they connect. The secret of this technique consists in partitioning this graph through the so-called
 'cut'. The problem of 'cut' is solved through the Laplacian.
-In Fig.1 we can see the behavior of the Fielder vector in grouping the three clusters. We calculated and shown the behavior of the latter with MATLAB.
+In Fig.1 we can see the behavior of the Fielder vector in grouping the three clusters. We calculated and shown the behavior of the latter with MATLAB. Codes and report are available on [this repository](https://github.com/Gianpe/Spectral_clustering)
 <img src='/images/clusters.png'>
