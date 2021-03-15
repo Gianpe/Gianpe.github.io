@@ -1,7 +1,7 @@
 ---
 title: "Spectral clustering"
 excerpt: "The aim of this work is to illustrate the spectral clustering and to see
-some applications in the field of bioinformatics. 1<br/><img src='/images/clusters.png'>"
+some applications in the field of bioinformatics.<br/><img src='/images/clusters.png'>"
 collection: portfolio
 ---
 
