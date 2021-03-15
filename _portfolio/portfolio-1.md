@@ -1,6 +1,6 @@
 ---
 title: "Spectral clustering"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/cluster.png'>"
+excerpt: "Short description of portfolio item number 1<br/><img src='/images/clusters.png'>"
 collection: portfolio
 ---
 
