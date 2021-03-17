@@ -310,4 +310,4 @@ compress_html:
   ignore:
     envs: development
 
-theme: cotes2020 / jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
