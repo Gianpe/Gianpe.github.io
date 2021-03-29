@@ -1,5 +1,5 @@
 ---
-title: "Sentiment analysis during US elecciones"
+title: "Sentiment analysis during US election"
 excerpt: "We are going to analyse data about the elections in Usa in 2020, to understand the general sentiment
 of people around the world through tweets.<br/><img src='/images/trumpbiden.png'>"
 collection: portfolio
