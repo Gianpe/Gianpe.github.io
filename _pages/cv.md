@@ -26,7 +26,7 @@ Skills
   * Matlab
   * SQL
 * Power BI
-* SQLserverMAnagementStudio,SSIS,SSAS and MDX
+* SQLserverManagementStudio,SSIS,SSAS and MDX
 * Data structeres and algorithms
   
 Hobbies
