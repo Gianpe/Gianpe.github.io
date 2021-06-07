@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "My Data porject portfolio"
+title: "My Data project portfolio"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
