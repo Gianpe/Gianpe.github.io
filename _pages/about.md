@@ -10,5 +10,5 @@ redirect_from:
 
 Hi, I'm Gianmarco and I'm an aspiring Data scientist.
 I love the world of data and its applications in many fields as in sports, medicine and politics.
-I have a bachelor in Bioengineering at University of Pisa and I'm finishing my Master in Data Science.
+I have a bachelor's degree in Bioengineering at University of Pisa and I'm finishing my Master's degree in Data Science.
 In the Portfolio section you can find the summary of my projects and the codes are available on my github page.
