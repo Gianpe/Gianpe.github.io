@@ -1,6 +1,6 @@
 ---
 title: "Sockpuppets detection through Network Anaylysis"
-excerpt: "We applied network analysis techinques to find scam on Airbnb platform<br/><img src='/images/PGHO (1) (1).png'>"
+excerpt: "We applied network analysis techinques to find scam on Airbnb platform<br/><img src='/images/snaWebsite.png'>"
 collection: portfolio
 ---
 
