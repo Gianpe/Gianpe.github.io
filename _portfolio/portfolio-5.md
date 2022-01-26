@@ -1,7 +1,6 @@
 ---
 title: "Judgements Anonymization"
-excerpt: "We are going to analyse data about the elections in Usa in 2020, to understand the general sentiment
-of people around the world through tweets.<br/><img src='/images/trumpbiden.png'>"
+excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='https://github.com/Gianpe/NLP_Anonymization/blob/main/images/def_extractor2.gif'>"
 collection: portfolio
 ---
 
