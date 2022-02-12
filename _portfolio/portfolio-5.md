@@ -1,6 +1,6 @@
 ---
 title: "Judgements Anonymization"
-excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src="https://github.com/Gianpe/NLP_Anonymization/blob/main/images/anon_sent.PNG" width="600" height="338"/>"
+excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/trumpbiden.png'>"
 collection: portfolio
 ---
 
