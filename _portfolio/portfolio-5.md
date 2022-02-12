@@ -4,37 +4,42 @@ excerpt: "We are going to anonymize judgements from Corte di Cassazione using st
 collection: portfolio
 ---
 
-Project made with Monia Bennici.
-#### Main skills learned
-* Data Scraping using BeautfulSoup and Selenium
-* Network analysis using CDlib, Networkx and NDlib
-* Implementation of spectral algorithms for Community Discovery
+# Judgements Anonymization
+In this project I will anonymize documents from criminal and civil judgments available free of charge online for consultation.
+NER models are often used to anonymize documents. These models are trained to extract the text entities.
+In this work an alternative method for anonymization is proposed which is based on the extraction of relationships within a text, in this case on criminal sentences.
+From this spaCy project https://github.com/explosion/projects/tree/v3/tutorials/rel_component I built a pipeline and trained it to extract the relationships between judge and accused and between lawyer and accused, with the aim of identifying the accused entity and anonymizing it, because I think the relationship can help distinguish the entity I'm interested in (accused) from those I don't intend to anonymize (judge, lawyer). I used state of the art NLP via the spacy-transformers library.  More info in the report.pdf
+I have created an interactive dashboard where you can enter any judgements by taking the link of the pdf from the following site http://www.italgiure.giustizia.it/sncass/ and you are shown a bar chart with top-k most likely defendants and a piece of the judgement with its anonymization. In addition, a copy of the pdf is downloaded in which the most eligible accused is obscured.
+In the gif below the dashboard is shown and later on how to use it on colab is explained
+<img src="https://github.com/Gianpe/NLP_Anonymization/blob/main/images/def_extractor2.gif" width="600" height="338"/>
 
+## Install pipeline
+```bash
+pip install https://github.com/Gianpe/NLP_Anonymization/releases/download/v0.0.1/en_relation_def_extraction-0.0.1.tar.gz
+```
 
-#### Introduction
-
-In the following we will analyse the network created from
-Airbnb, capturing the main measures and trying to understand some aspect, applying some community discovery
-techniques and the simulation of diffusion model. In particular, we will implement, apart from the algorithms given in the
-libraries, a new algorithm based on the spectral clustering.
-Moreover, we would like to capture the so called "sockpuppet" phenomenon, that is all users that create more than one
-account to deceive the restrictions given in the platform. All
-the notebooks are stored in github repositories.
-
-
-Airbnb is one of the biggest platform of house sharing, in
-which people can rent rooms of their own house for short
-terms, that was born in order to let them make some money.
-Of course this is a problem for most of the hotels owners
-and this is the reason why some cities decided to restrict the maximum amount of time a host can rent his house, that
-is usually 60-90 days per year depending on the city. Our
-network is created using as nodes hosts and guests registered
-in the platform in the area of Amsterdam. In particular, hosts
-are those who rent the rooms, guests are users who pay to
-use the room and leave the reviews of their experience in
-that house and with that host. So, our net is a bipartite graph,
-in which every guest can be connected only to hosts and
-the edge represent the number of time the guest has left a
-review.
-After collecting the useful data we compared our network
-with random networks and then we did 3 analytical tasks.
+## Usage on Colab to use dashboard
+Open a Colab notebook and copy the following lines of code:
+(Remember to change the runtime type and choose GPU)
+Clone the repository and go to the Step4_Visualization folder
+```bash
+!git clone https://github.com/Gianpe/NLP_Anonymization.git
+%cd /content/NLP_Anonymization/notebooks/Step4_Visualization/
+```
+Install the necessary libraries in the order they are in the requirements.txt file
+```bash
+!cat requirements.txt | xargs -n 1 -L 1 pip install
+```
+Use ngrok to create a tunnel between colab server and your localhost
+(sign up on https://ngrok.com/ to obtain YOUR_TOKEN and replace it in the code below
+```bash
+#This step is necessary because the config file of a library we import is not updated and it brings to error. 
+!grep -rl "defaults = yaml.load(f)" /usr/local/lib/python3.7/dist-packages/distributed/config.py | xargs sed -i 's/defaults = yaml.load(f)/defaults = yaml.load(f, Loader=yaml.FullLoader)/g'
+!ngrok authtoken YOUR_TOKEN
+```
+Create the tunnel
+```bash
+from pyngrok import ngrok
+#To run dash in colab it is necessary to create a tunnel. The first link will be the one to use to see the dashboards
+ngrok.connect(8050)
+```
