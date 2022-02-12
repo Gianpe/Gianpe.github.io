@@ -1,6 +1,6 @@
 ---
 title: "Judgements Anonymization"
-excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/anon_sent_formatted.PNG'>"
+excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/anon_sent_formatted.png'>"
 collection: portfolio
 ---
 
@@ -48,7 +48,7 @@ ngrok.connect(8050)
 
 After running this code on colab click on the NgrokTunnel and the dashboard will open where you can enter the judgement link taken from the following [link:](http://www.italgiure.giustizia.it/sncass/).
 The pdf of the judgement will be downloaded with the relative anonymization as in the image below:
-<img src="/images/anon_sent.PNG" width="600" height="338"/>
+<img src="/images/anon_sent.png" width="600" height="338"/>
 
 ## Usage pipeline
 Libraries needed
