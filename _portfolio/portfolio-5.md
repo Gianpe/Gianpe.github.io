@@ -1,6 +1,6 @@
 ---
 title: "Judgements Anonymization"
-excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/trumpbiden.png'>"
+excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/anon_sent_formatted.PNG'>"
 collection: portfolio
 ---
 
@@ -9,7 +9,7 @@ In this project I will anonymize documents from criminal and civil judgments ava
 NER models are often used to anonymize documents. These models are trained to extract the text entities.
 In this work an alternative method for anonymization is proposed which is based on the extraction of relationships within a text, in this case on criminal sentences.
 From this spaCy [project](https://github.com/explosion/projects/tree/v3/tutorials/rel_component) I built a pipeline and trained it to extract the relationships between judge and accused and between lawyer and accused, with the aim of identifying the accused entity and anonymizing it, because I think the relationship can help distinguish the entity I'm interested in (accused) from those I don't intend to anonymize (judge, lawyer). I used state of the art NLP via the spacy-transformers library.  More info in the report.pdf
-I have created an interactive dashboard where you can enter any judgements by taking the link of the pdf from the following site http://www.italgiure.giustizia.it/sncass/ and you are shown a bar chart with top-k most likely defendants and a piece of the judgement with its anonymization. In addition, a copy of the pdf is downloaded in which the most eligible accused is obscured.
+I have created an interactive dashboard where you can enter any judgements by taking the link of the pdf from the following [site](http://www.italgiure.giustizia.it/sncass/) and you are shown a bar chart with top-k most likely defendants and a piece of the judgement with its anonymization. In addition, a copy of the pdf is downloaded in which the most eligible accused is obscured.
 In the gif below the dashboard is shown and later on how to use it on colab is explained
 <img src="/images/def_extractor2.gif" width="600" height="338"/>
 
@@ -44,4 +44,38 @@ Create the tunnel
 from pyngrok import ngrok
 #To run dash in colab it is necessary to create a tunnel. The first link will be the one to use to see the dashboards
 ngrok.connect(8050)
+```
+
+After running this code on colab click on the NgrokTunnel and the dashboard will open where you can enter the judgement link taken from the following [link:](http://www.italgiure.giustizia.it/sncass/).
+The pdf of the judgement will be downloaded with the relative anonymization as in the image below:
+<img src="/images/anon_sent.PNG" width="600" height="338"/>
+
+## Usage pipeline
+Libraries needed
+```bash
+pip install -U spacy-nightly --pre
+pip install spacy==3.2.1
+pip install transformers==4.15.0
+pip install spacy_transformers==1.1.4
+```
+Install 2 pipelines
+```bash
+pip install https://github.com/Gianpe/NLP_Anonymization/releases/download/v0.0.1/en_relation_def_extraction-0.0.1.tar.gz
+python -m spacy download it_core_news_lg
+```
+Import pipelines
+```bash
+import spacy
+
+nlp_rel = spacy.load('en_relation_def_extraction')
+nlp_it = spacy.load('it_core_news_lg')
+
+text = ''' Con ordinanza in data 17/12/2020 il Giudice per le indagini preliminari del
+Tribunale di Monza ha disposto, nei confronti di Gianmarco Pepi, la
+revoca della sanzione sostitutiva dei lavori di pubblica utilità applicata, per la
+durata di 86 giorni, in sostituzione della pena di 80 giorni di arresto e di
+1.500,00 euro di ammenda'''
+
+doc = nlp_rel(nlp_it(text))
+print(doc._.rel)
 ```
