@@ -4,31 +4,14 @@ title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
-  - /resume
+  - /wordpress/cv/
 ---
 
+
 {% include base_path %}
+{% capture written_label %}'None'{% endcapture %}
 
-Education
-======
-* B.S. in Ingegneria Biomedica, Università di Pisa, 2019
-* M.S. in Data Science and BI, Università di Pisa, 2019-
+If the embedded PDF below does not load, you can <u><a href="https://github.com/Gianpe/Gianpe.github.io/cv_gian.pdf">download it here.</a></u>
+<br/>
 
-Work experience
-======
-* Summer 2014: sports animator
-  
-  
-Skills
-======
-* Programming
-  * Python
-  * Matlab
-  * SQL
-* Power BI
-* SQLserverManagementStudio,SSIS,SSAS and MDX
-* Data structeres and algorithms
-  
-Hobbies
-======
-* Soccer, volley, tennis, ping-pong and running
+<embed src="https://github.com/Gianpe/Gianpe.github.io/cv_gian.pdf" type="application/pdf" width="100%" />
