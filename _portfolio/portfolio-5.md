@@ -3,7 +3,8 @@ title: "Judgements Anonymization"
 excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/anon_sent_formatted.png'>"
 collection: portfolio
 ---
-Report [here](https://github.com/Gianpe/NLP_Anonymization/report.pdf) \n
+Report [here](https://github.com/Gianpe/NLP_Anonymization/report.pdf) 
+
 Code [here](https://github.com/Gianpe/NLP_Anonymization) 
 
 
