@@ -4,6 +4,10 @@ excerpt: "We are going to analyse data about the elections in Usa in 2020, to un
 of people around the world through tweets.<br/><img src='/images/trumpbiden.png'>"
 collection: portfolio
 ---
+Report [here](https://github.com/Gianpe/SentimentAnalysis-Spark/blob/main/DDAM_Group8%20(1).pdf)
+
+Code [here](https://github.com/Gianpe/SentimentAnalysis-Spark)
+
 
 Project made with Monia Bennici and Filip Strzazlka.
 #### Introduction
