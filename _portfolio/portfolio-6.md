@@ -1,6 +1,6 @@
 ---
 title: "Business Intelligence project"
-excerpt: "Database schema, ETL, Data Warehouse, Business question with SSIS and MDX, dASHBOARD WITH PowerBI and MicroStrategy Desktop.<br/><img src='/images/my_dash.png'>"
+excerpt: "Database schema, ETL, Data Warehouse, Business question with SSIS and MDX, Dashboard with PowerBI and MicroStrategy Desktop.<br/><img src='/images/my_dash.png'>"
 collection: portfolio
 ---
 
