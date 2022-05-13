@@ -1,6 +1,6 @@
 ---
 title: "Business Intelligence project"
-excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/my_dash.pdf'>"
+excerpt: "We are going to anonymize judgements from Corte di Cassazione using state of the art NLP.<br/><img src='/images/my_dash.png'>"
 collection: portfolio
 ---
 
