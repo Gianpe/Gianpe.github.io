@@ -4,7 +4,12 @@ excerpt: "We applied network analysis techinques to find scam on Airbnb platform
 collection: portfolio
 ---
 
-Project made with Monia Bennici.
+Report [here](https://github.com/Gianpe/NetworkAnalysis_Airbnb/blob/main/Final_report_group8.pdf) 
+
+Code [here](https://github.com/Gianpe/NetworkAnalysis_Airbnb) 
+
+Project made with Monia Bennici, Khashayar Abtin, and Kamran Mehravar.
+
 #### Main skills learned
 * Data Scraping using BeautfulSoup and Selenium
 * Network analysis using CDlib, Networkx and NDlib
