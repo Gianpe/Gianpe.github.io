@@ -4,6 +4,8 @@ excerpt: "Project focused on classifiers, time series analysis and sequential pa
 collection: portfolio
 ---
 
+Report [here](https://github.com/DM2-project/Occupancy-detection/blob/master/DM1project.pdf)
+
 This text is based on the study of the dataset "Occupancy Detection", available in UCI (machine learning repository) site, composed by three dataset ("datatest.txt", "datatest2.txt" and "datatraining.txt"), using the sci-kit learn library,
 pandas, Numpy and Keras. The project objective is that of apply the main
 tool we know, in order to extract information from the dataset, to classify new
