@@ -14,4 +14,4 @@ redirect_from:
 If the embedded PDF below does not load, you can <u><a href="https://gianpe.github.io/CV.pdf">download it here.</a></u>
 <br/>
 
-<embed src="https://gianpe.github.io/cv_gian.pdf" type="application/pdf" width="100%" />
+<embed src="https://gianpe.github.io/CV.pdf" type="application/pdf" width="100%" />
