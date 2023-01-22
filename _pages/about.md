@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "My Data project portfolio"
+title: "My Journey as an Aspiring Data Scientist"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
